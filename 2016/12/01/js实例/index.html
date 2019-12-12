@@ -10,16 +10,16 @@
 <title>JavaScript一些知识点实例 - 赵旭航</title>
 
 
-    <meta name="description" content="原型链与继承123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051&#x2F;&#x2F;基类 原型链 继承	function Person(name,age)&amp;#123;&#x2F;&#x2F;人类 基类		this.name &#x3D; name;		this.age &#x3D; age;	&amp;#125;	Perso">
+    <meta name="description" content="JavaScript一些知识点实例">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript一些知识点实例">
 <meta property="og:url" content="https:&#x2F;&#x2F;zxuhang.github.io&#x2F;2016&#x2F;12&#x2F;01&#x2F;js%E5%AE%9E%E4%BE%8B&#x2F;index.html">
 <meta property="og:site_name" content="赵旭航">
-<meta property="og:description" content="原型链与继承123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051&#x2F;&#x2F;基类 原型链 继承	function Person(name,age)&amp;#123;&#x2F;&#x2F;人类 基类		this.name &#x3D; name;		this.age &#x3D; age;	&amp;#125;	Perso">
+<meta property="og:description" content="JavaScript一些知识点实例">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https:&#x2F;&#x2F;zxuhang.github.io&#x2F;images&#x2F;og_image.png">
 <meta property="article:published_time" content="2016-12-01T03:21:51.000Z">
-<meta property="article:modified_time" content="2019-12-12T07:24:06.690Z">
+<meta property="article:modified_time" content="2019-12-12T07:30:23.666Z">
 <meta property="article:author" content="赵旭航">
 <meta property="article:tag" content="JavaScript">
 <meta name="twitter:card" content="summary">
@@ -139,11 +139,15 @@
             <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2016-12-01T03:21:51.000Z">2016-12-01</time>
                 
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/JavaScript/">JavaScript</a>
+                </div>
+                
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    9 分钟 读完 (大约 1419 个字)
+                    10 分钟 读完 (大约 1427 个字)
                 </span>
                 
                 
@@ -156,7 +160,7 @@
             
         </h1>
         <div class="content">
-            <a id="more"></a>
+            <h1 id="JavaScript一些知识点实例"><a href="#JavaScript一些知识点实例" class="headerlink" title="JavaScript一些知识点实例"></a>JavaScript一些知识点实例</h1><a id="more"></a>
 
 <h2 id="原型链与继承"><a href="#原型链与继承" class="headerlink" title="原型链与继承"></a>原型链与继承</h2><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">//基类 原型链 继承</span><br><span class="line">	<span class="hljs-keyword">function</span> Person(name,age)&#123;//人类 基类</span><br><span class="line">		this.name = name;</span><br><span class="line">		this.age = age;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	Person.prototype.hi = <span class="hljs-function"><span class="hljs-title">function</span></span>()&#123;</span><br><span class="line">		console.log(<span class="hljs-string">'hi my name is'</span>+this.name+<span class="hljs-string">'my age is'</span>+this.age);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	Person.prototype.LEGS_NUM = 2;</span><br><span class="line">	Person.prototype.ARMS_NUM = 2;</span><br><span class="line">	Person.prototype.walk = <span class="hljs-function"><span class="hljs-title">function</span></span>()&#123;</span><br><span class="line">		console.log(this.name+<span class="hljs-string">'is walking..'</span>);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	<span class="hljs-keyword">function</span> Worker(name,age,workerNum)&#123;//工人 构造函数</span><br><span class="line">		Person.call(this,name,age);//Worker对象执行Person函数</span><br><span class="line">		this.workerNum = workerNum;</span><br><span class="line">	&#125;</span><br><span class="line">	Worker.prototype = Person.prototype;//这样继承会造成基类原型中的方法和构造函数原型的方法同名时 基类原型方法会被改变</span><br><span class="line"></span><br><span class="line">	Worker.prototype.say = <span class="hljs-function"><span class="hljs-title">function</span></span>()&#123;</span><br><span class="line">		console.log(this.name+<span class="hljs-string">'say:我是工人'</span>)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	<span class="hljs-keyword">function</span> Student(name,age,className)&#123;//学生 构造函数</span><br><span class="line">		Person.call(this,name,age);//Student对象执行Person函数</span><br><span class="line">		this.className = className;</span><br><span class="line">	&#125;</span><br><span class="line">	// Student.prototype = Person.prototype;//这样继承会造成基类原型被改变</span><br><span class="line">	Student.prototype = Object.create(Person.prototype);//新建一个空对象复制基类 然后原型在被继承</span><br><span class="line">	Student.prototype.constructor = Student;</span><br><span class="line">	Student.prototype.hi = <span class="hljs-function"><span class="hljs-title">function</span></span>()&#123;</span><br><span class="line">		console.log(this.name+<span class="hljs-string">'say:"hello"'</span>);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	var xh = new Person(<span class="hljs-string">'小红'</span>,11);</span><br><span class="line">	var xq = new Worker(<span class="hljs-string">'小强'</span>,30,120);</span><br><span class="line">	var xm = new Student(<span class="hljs-string">'小明'</span>,12,<span class="hljs-string">'001'</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	console.log(Student.prototype.constructor)</span><br><span class="line">	xm.hi();</span><br><span class="line">	xh.hi();</span><br><span class="line">	// xq.hi();</span><br><span class="line">	alert(xm.LEGS_NUM)</span><br></pre></td></tr></table></figure>
 <h2 id="关于事件委托"><a href="#关于事件委托" class="headerlink" title="关于事件委托"></a>关于事件委托</h2><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">//事件委托 dom结构：<span class="hljs-comment">#a(#b,#c),只给父级节点绑定事件通过事件冒泡委托给子级元素</span></span><br><span class="line">var aDiv = document.getElementById(<span class="hljs-string">'a'</span>);</span><br><span class="line"></span><br><span class="line">	<span class="hljs-keyword">function</span> addEvent(ele,<span class="hljs-built_in">type</span>,callback)&#123;</span><br><span class="line">		<span class="hljs-keyword">if</span>(ele.addEventListener)&#123;</span><br><span class="line">			ele.addEventListener(<span class="hljs-built_in">type</span>,callback,<span class="hljs-literal">false</span>);//默认<span class="hljs-literal">false</span>(<span class="hljs-literal">true</span>事件捕获，<span class="hljs-literal">false</span>事件冒泡)</span><br><span class="line">		&#125;<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(ele.attachEvent)&#123;//ie浏览器只支持事件冒泡</span><br><span class="line">			ele.attachEvent(<span class="hljs-string">'on'</span>+<span class="hljs-built_in">type</span>,callback);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="hljs-keyword">function</span> handler(e)&#123;</span><br><span class="line">		var e = e || window.event;</span><br><span class="line"></span><br><span class="line">		console.log(e.target.id);</span><br><span class="line">		switch(e.target.id)&#123;</span><br><span class="line">			<span class="hljs-keyword">case</span> <span class="hljs-string">'b'</span>:</span><br><span class="line">			alert(<span class="hljs-string">'hi'</span>);</span><br><span class="line">			<span class="hljs-built_in">break</span>;</span><br><span class="line">			<span class="hljs-keyword">case</span> <span class="hljs-string">'c'</span>:</span><br><span class="line">			alert(<span class="hljs-string">'hello'</span>);</span><br><span class="line">			<span class="hljs-built_in">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		alert(<span class="hljs-string">'word'</span>)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	addEvent(aDiv,<span class="hljs-string">'click'</span>,handler);</span><br></pre></td></tr></table></figure>
@@ -296,7 +300,7 @@
                     </p>
                     <a href="/categories">
                         <p class="title has-text-weight-normal">
-                            0
+                            3
                         </p>
                     </a>
                 </div>
@@ -421,7 +425,31 @@
                 分类
             </h3>
             <ul class="menu-list">
-            
+            <li>
+        <a class="level is-marginless" href="/categories/Hexo/">
+            <span class="level-start">
+                <span class="level-item">Hexo</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/JavaScript/">
+            <span class="level-start">
+                <span class="level-item">JavaScript</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">2</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/git/">
+            <span class="level-start">
+                <span class="level-item">git</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li>
             </ul>
         </div>
     </div>
@@ -432,7 +460,7 @@
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/js-%E5%8E%9F%E5%9E%8B%E9%93%BE-%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/" style="font-size: 10px;">js,原型链,对象类型</a>
+        <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/js/" style="font-size: 10px;">js</a>
     </div>
 </div>
     
@@ -458,7 +486,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-12T03:05:16.000Z">2019-12-12</time></div>
                     <a href="/2019/12/12/js%E6%A3%80%E6%9F%A5%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/" class="title has-link-black-ter is-size-6 has-text-weight-normal">js检查对象类型</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/JavaScript/">JavaScript</a>
                     </p>
                 </div>
             </div>
@@ -477,7 +505,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-11T02:15:34.394Z">2019-12-11</time></div>
                     <a href="/2019/12/11/hexo%E7%94%A8%E6%B3%95/" class="title has-link-black-ter is-size-6 has-text-weight-normal">hexo用法</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Hexo/">Hexo</a>
                     </p>
                 </div>
             </div>
@@ -496,7 +524,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-06-12T02:56:59.000Z">2018-06-12</time></div>
                     <a href="/2018/06/12/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="title has-link-black-ter is-size-6 has-text-weight-normal">git常用命令</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/git/">git</a>
                     </p>
                 </div>
             </div>
@@ -515,7 +543,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2016-12-01T03:21:51.000Z">2016-12-01</time></div>
                     <a href="/2016/12/01/js%E5%AE%9E%E4%BE%8B/" class="title has-link-black-ter is-size-6 has-text-weight-normal">JavaScript一些知识点实例</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/JavaScript/">JavaScript</a>
                     </p>
                 </div>
             </div>
@@ -593,8 +621,8 @@
                 </div>
                 
                 <div class="control">
-                    <a class="tags has-addons" href="/tags/js-%E5%8E%9F%E5%9E%8B%E9%93%BE-%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/">
-                        <span class="tag">js,原型链,对象类型</span>
+                    <a class="tags has-addons" href="/tags/js/">
+                        <span class="tag">js</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -634,7 +662,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-12T03:05:16.000Z">2019-12-12</time></div>
                     <a href="/2019/12/12/js%E6%A3%80%E6%9F%A5%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/" class="title has-link-black-ter is-size-6 has-text-weight-normal">js检查对象类型</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/JavaScript/">JavaScript</a>
                     </p>
                 </div>
             </div>
@@ -653,7 +681,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-11T02:15:34.394Z">2019-12-11</time></div>
                     <a href="/2019/12/11/hexo%E7%94%A8%E6%B3%95/" class="title has-link-black-ter is-size-6 has-text-weight-normal">hexo用法</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Hexo/">Hexo</a>
                     </p>
                 </div>
             </div>
@@ -672,7 +700,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-06-12T02:56:59.000Z">2018-06-12</time></div>
                     <a href="/2018/06/12/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="title has-link-black-ter is-size-6 has-text-weight-normal">git常用命令</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/git/">git</a>
                     </p>
                 </div>
             </div>
@@ -691,7 +719,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2016-12-01T03:21:51.000Z">2016-12-01</time></div>
                     <a href="/2016/12/01/js%E5%AE%9E%E4%BE%8B/" class="title has-link-black-ter is-size-6 has-text-weight-normal">JavaScript一些知识点实例</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/JavaScript/">JavaScript</a>
                     </p>
                 </div>
             </div>
@@ -769,8 +797,8 @@
                 </div>
                 
                 <div class="control">
-                    <a class="tags has-addons" href="/tags/js-%E5%8E%9F%E5%9E%8B%E9%93%BE-%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/">
-                        <span class="tag">js,原型链,对象类型</span>
+                    <a class="tags has-addons" href="/tags/js/">
+                        <span class="tag">js</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -845,7 +873,7 @@ var IcarusThemeSettings = {
     article: {
         highlight: {
             clipboard: true,
-            fold: 'folded'
+            fold: 'unfolded'
         }
     }
 };

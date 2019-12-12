@@ -144,11 +144,15 @@
             <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2019-12-12T03:05:16.000Z">2019-12-12</time>
                 
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/JavaScript/">JavaScript</a>
+                </div>
+                
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    1 分钟 读完 (大约 188 个字)
+                    1 分钟 读完 (大约 195 个字)
                 </span>
                 
                 
@@ -161,10 +165,17 @@
             
         </h1>
         <div class="content">
-            <a id="more"></a>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">hasOwnProperty 此方法无法检查该对象的原型链中是否具有该属性</span><br><span class="line">	object.hasOwnProperty(proName)</span><br><span class="line"></span><br><span class="line">constructor 属性返回对创建此对象的数组函数的引用 属性值是指向创建当前实例的对象的	</span><br><span class="line">	[].constructor == Array //<span class="hljs-literal">true</span></span><br><span class="line">	Object.constructor == Object //<span class="hljs-literal">false</span></span><br><span class="line">	原型链被改变会报错</span><br><span class="line">		var arr = [];</span><br><span class="line">		arr.__proto__ = String</span><br><span class="line">		arr.constructor == Array //<span class="hljs-literal">false</span></span><br><span class="line"></span><br><span class="line">instanceof 检测这个实例对象是不是这个方法new出来的</span><br><span class="line">	[] instanceof Array //<span class="hljs-literal">true</span></span><br><span class="line">	Number instanceof Number //<span class="hljs-literal">false</span></span><br><span class="line">	String instanceof String //<span class="hljs-literal">false</span></span><br><span class="line">	Object instanceof Object //<span class="hljs-literal">true</span></span><br><span class="line">	Function instanceof Function //<span class="hljs-literal">true</span></span><br><span class="line">	Function instanceof Object //<span class="hljs-literal">true</span></span><br><span class="line">	<span class="hljs-keyword">function</span> <span class="hljs-function"><span class="hljs-title">Foo</span></span>()&#123;&#125;</span><br><span class="line">	Foo instanceof Function //<span class="hljs-literal">true</span></span><br><span class="line">	Foo instanceof Foo //<span class="hljs-literal">false</span></span><br><span class="line">	原型链改变会报错</span><br><span class="line">		var arr = []</span><br><span class="line">		arr.__proto__ = String</span><br><span class="line">		arr instanceof Array //<span class="hljs-literal">false</span></span><br><span class="line"></span><br><span class="line">typeof 用于检测基本类型</span><br><span class="line">	typeof undefined;//=&gt; undefined</span><br><span class="line">	typeof <span class="hljs-string">'a'</span>;//=&gt; string</span><br><span class="line">	typeof 1;//=&gt; number</span><br><span class="line">	typeof <span class="hljs-literal">true</span>;//=&gt; boolean</span><br><span class="line">	typeof &#123;&#125;;//=&gt; object</span><br><span class="line">	typeof [];//=&gt; object</span><br><span class="line">	typeof <span class="hljs-function"><span class="hljs-title">function</span></span>() &#123;&#125;;//=&gt; <span class="hljs-keyword">function</span></span><br><span class="line">	typeof null;//=&gt; object</span><br></pre></td></tr></table></figure>
+            <h1 id="js检查对象类型"><a href="#js检查对象类型" class="headerlink" title="js检查对象类型"></a>js检查对象类型</h1>
         </div>
         
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2019/12/12/js%E6%A3%80%E6%9F%A5%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
         
         
     </div>
@@ -186,6 +197,10 @@
             <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2019-12-11T02:15:34.394Z">2019-12-11</time>
                 
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Hexo/">Hexo</a>
+                </div>
+                
                 
                 <span class="level-item has-text-grey">
                     
@@ -203,24 +218,17 @@
             
         </h1>
         <div class="content">
-            <a id="more"></a>
-
-<p>欢迎来到河西！这是你的第一份工作。查看文档以获取更多信息。如果您在使用Hexo时遇到任何问题，可以在故障排除中找到答案，也可以在GitHub上询问我。<br>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.<br>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="快速启动"><a href="#快速启动" class="headerlink" title="快速启动"></a>快速启动</h2><h3 id="创建新帖子"><a href="#创建新帖子" class="headerlink" title="创建新帖子"></a>创建新帖子</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="hljs-string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+            <p>欢迎来到河西！这是你的第一份工作。查看文档以获取更多信息。如果您在使用Hexo时遇到任何问题，可以在故障排除中找到答案，也可以在GitHub上询问我。</p>
         </div>
         
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2019/12/11/hexo%E7%94%A8%E6%B3%95/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
         
         
     </div>
@@ -242,11 +250,15 @@
             <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2018-06-12T02:56:59.000Z">2018-06-12</time>
                 
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/git/">git</a>
+                </div>
+                
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    2 分钟 读完 (大约 272 个字)
+                    2 分钟 读完 (大约 273 个字)
                 </span>
                 
                 
@@ -259,10 +271,17 @@
             
         </h1>
         <div class="content">
-            <a id="more"></a>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">//克隆</span><br><span class="line">git <span class="hljs-built_in">clone</span> git@地址</span><br><span class="line"></span><br><span class="line">//查看状态</span><br><span class="line">git status</span><br><span class="line"></span><br><span class="line">//查看本地和远程分支，当前分支</span><br><span class="line">git branch -a</span><br><span class="line"></span><br><span class="line">//创建文件 test.text</span><br><span class="line">touch test.txt</span><br><span class="line"></span><br><span class="line">//添加修改到本地仓库</span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line">//本次提交注释</span><br><span class="line">git commit -m <span class="hljs-string">"注释内容"</span></span><br><span class="line"></span><br><span class="line">//查看远程仓库</span><br><span class="line">git remote -v</span><br><span class="line"></span><br><span class="line">//推送到远程主分支（master）</span><br><span class="line">git push origin master</span><br><span class="line"></span><br><span class="line">//创建新的分支(复制master分支内容)</span><br><span class="line">git checkout -b 分支名称</span><br><span class="line"></span><br><span class="line">//切换到master分支</span><br><span class="line">git checkout master</span><br><span class="line"></span><br><span class="line">//拉取别的分支到master分支合并分支（可能会冲突）</span><br><span class="line">git merge 分支名称</span><br><span class="line"></span><br><span class="line">//删除本地分支</span><br><span class="line">git branch -D 分支名</span><br><span class="line"></span><br><span class="line">//删除远程分支</span><br><span class="line">git push origin :分支名</span><br><span class="line"></span><br><span class="line">//回退上次提交</span><br><span class="line">git reset --hard head^</span><br><span class="line"></span><br><span class="line">//查看提交日志(git <span class="hljs-built_in">log</span>)</span><br><span class="line">git reflog</span><br><span class="line"></span><br><span class="line">//回退1 谨慎使用 指定的提交（执行git reflog 查看版本号）复制指定的版本号 </span><br><span class="line">git reset --hard 版本号</span><br><span class="line"></span><br><span class="line">//回退2 通过反做创建一个新的版本，这个版本的内容与我们要回退到的目标版本一样</span><br><span class="line">git revert 版本号</span><br><span class="line">git revert OLDER_COMMIT^..NEWER_COMMIT</span><br></pre></td></tr></table></figure>
+            <h1 id="git"><a href="#git" class="headerlink" title="git"></a>git</h1>
         </div>
         
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2018/06/12/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
         
         
     </div>
@@ -284,11 +303,15 @@
             <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2016-12-01T03:21:51.000Z">2016-12-01</time>
                 
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/JavaScript/">JavaScript</a>
+                </div>
+                
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    9 分钟 读完 (大约 1419 个字)
+                    10 分钟 读完 (大约 1427 个字)
                 </span>
                 
                 
@@ -301,22 +324,17 @@
             
         </h1>
         <div class="content">
-            <a id="more"></a>
-
-<h2 id="原型链与继承"><a href="#原型链与继承" class="headerlink" title="原型链与继承"></a>原型链与继承</h2><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">//基类 原型链 继承</span><br><span class="line">	<span class="hljs-keyword">function</span> Person(name,age)&#123;//人类 基类</span><br><span class="line">		this.name = name;</span><br><span class="line">		this.age = age;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	Person.prototype.hi = <span class="hljs-function"><span class="hljs-title">function</span></span>()&#123;</span><br><span class="line">		console.log(<span class="hljs-string">'hi my name is'</span>+this.name+<span class="hljs-string">'my age is'</span>+this.age);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	Person.prototype.LEGS_NUM = 2;</span><br><span class="line">	Person.prototype.ARMS_NUM = 2;</span><br><span class="line">	Person.prototype.walk = <span class="hljs-function"><span class="hljs-title">function</span></span>()&#123;</span><br><span class="line">		console.log(this.name+<span class="hljs-string">'is walking..'</span>);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	<span class="hljs-keyword">function</span> Worker(name,age,workerNum)&#123;//工人 构造函数</span><br><span class="line">		Person.call(this,name,age);//Worker对象执行Person函数</span><br><span class="line">		this.workerNum = workerNum;</span><br><span class="line">	&#125;</span><br><span class="line">	Worker.prototype = Person.prototype;//这样继承会造成基类原型中的方法和构造函数原型的方法同名时 基类原型方法会被改变</span><br><span class="line"></span><br><span class="line">	Worker.prototype.say = <span class="hljs-function"><span class="hljs-title">function</span></span>()&#123;</span><br><span class="line">		console.log(this.name+<span class="hljs-string">'say:我是工人'</span>)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	<span class="hljs-keyword">function</span> Student(name,age,className)&#123;//学生 构造函数</span><br><span class="line">		Person.call(this,name,age);//Student对象执行Person函数</span><br><span class="line">		this.className = className;</span><br><span class="line">	&#125;</span><br><span class="line">	// Student.prototype = Person.prototype;//这样继承会造成基类原型被改变</span><br><span class="line">	Student.prototype = Object.create(Person.prototype);//新建一个空对象复制基类 然后原型在被继承</span><br><span class="line">	Student.prototype.constructor = Student;</span><br><span class="line">	Student.prototype.hi = <span class="hljs-function"><span class="hljs-title">function</span></span>()&#123;</span><br><span class="line">		console.log(this.name+<span class="hljs-string">'say:"hello"'</span>);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	var xh = new Person(<span class="hljs-string">'小红'</span>,11);</span><br><span class="line">	var xq = new Worker(<span class="hljs-string">'小强'</span>,30,120);</span><br><span class="line">	var xm = new Student(<span class="hljs-string">'小明'</span>,12,<span class="hljs-string">'001'</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	console.log(Student.prototype.constructor)</span><br><span class="line">	xm.hi();</span><br><span class="line">	xh.hi();</span><br><span class="line">	// xq.hi();</span><br><span class="line">	alert(xm.LEGS_NUM)</span><br></pre></td></tr></table></figure>
-<h2 id="关于事件委托"><a href="#关于事件委托" class="headerlink" title="关于事件委托"></a>关于事件委托</h2><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">//事件委托 dom结构：<span class="hljs-comment">#a(#b,#c),只给父级节点绑定事件通过事件冒泡委托给子级元素</span></span><br><span class="line">var aDiv = document.getElementById(<span class="hljs-string">'a'</span>);</span><br><span class="line"></span><br><span class="line">	<span class="hljs-keyword">function</span> addEvent(ele,<span class="hljs-built_in">type</span>,callback)&#123;</span><br><span class="line">		<span class="hljs-keyword">if</span>(ele.addEventListener)&#123;</span><br><span class="line">			ele.addEventListener(<span class="hljs-built_in">type</span>,callback,<span class="hljs-literal">false</span>);//默认<span class="hljs-literal">false</span>(<span class="hljs-literal">true</span>事件捕获，<span class="hljs-literal">false</span>事件冒泡)</span><br><span class="line">		&#125;<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(ele.attachEvent)&#123;//ie浏览器只支持事件冒泡</span><br><span class="line">			ele.attachEvent(<span class="hljs-string">'on'</span>+<span class="hljs-built_in">type</span>,callback);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="hljs-keyword">function</span> handler(e)&#123;</span><br><span class="line">		var e = e || window.event;</span><br><span class="line"></span><br><span class="line">		console.log(e.target.id);</span><br><span class="line">		switch(e.target.id)&#123;</span><br><span class="line">			<span class="hljs-keyword">case</span> <span class="hljs-string">'b'</span>:</span><br><span class="line">			alert(<span class="hljs-string">'hi'</span>);</span><br><span class="line">			<span class="hljs-built_in">break</span>;</span><br><span class="line">			<span class="hljs-keyword">case</span> <span class="hljs-string">'c'</span>:</span><br><span class="line">			alert(<span class="hljs-string">'hello'</span>);</span><br><span class="line">			<span class="hljs-built_in">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		alert(<span class="hljs-string">'word'</span>)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	addEvent(aDiv,<span class="hljs-string">'click'</span>,handler);</span><br></pre></td></tr></table></figure>
-<p>##获取url传的参数</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-keyword">function</span> <span class="hljs-function"><span class="hljs-title">getRequest</span></span>() &#123;   //获取url传的参数</span><br><span class="line">       var url = window.location.search; //获取url中<span class="hljs-string">"?"</span>符后的字串   </span><br><span class="line">       var theRequest = new Object();   </span><br><span class="line">       <span class="hljs-keyword">if</span> (url.indexOf(<span class="hljs-string">"?"</span>) != -1) &#123;   </span><br><span class="line">          var str = url.substr(1);   </span><br><span class="line">          var strs = str.split(<span class="hljs-string">"&amp;"</span>);   </span><br><span class="line">          <span class="hljs-keyword">for</span>(var i = 0; i &lt; strs.length; i ++) &#123;   </span><br><span class="line">              //就是这句的问题</span><br><span class="line">             theRequest[strs[i].split(<span class="hljs-string">"="</span>)[0]]=decodeURI(strs[i].split(<span class="hljs-string">"="</span>)[1]); </span><br><span class="line">             //之前用了unescape()会出现乱码  </span><br><span class="line">          &#125;   </span><br><span class="line">       &#125;   </span><br><span class="line">       <span class="hljs-built_in">return</span> theRequest;   </span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">var Request = getRequest()</span><br></pre></td></tr></table></figure>
-<p>##数字效果</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-keyword">function</span> numAnimation(id)&#123; //数字的效果慢慢变大</span><br><span class="line">	var num = $(id).html();</span><br><span class="line">	var time = 50;</span><br><span class="line">	var i = 0;</span><br><span class="line">	var f = num - parseInt(num);</span><br><span class="line">	var fn = f/20;</span><br><span class="line">	var n = parseInt(num / 20);</span><br><span class="line">	myTime(time)</span><br><span class="line">	<span class="hljs-keyword">function</span> myTime(time)&#123;</span><br><span class="line">	  setTimeout(<span class="hljs-function"><span class="hljs-title">function</span></span>()&#123;</span><br><span class="line">		  i = i + n;</span><br><span class="line">		  f = f + fn;</span><br><span class="line">		  // debugger</span><br><span class="line">		  <span class="hljs-keyword">if</span>(i &lt; num - n)&#123;</span><br><span class="line">			<span class="hljs-keyword">if</span>(i &gt; n*10)&#123;</span><br><span class="line">			  time = 80</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="hljs-keyword">if</span>(i &gt; n*15)&#123;</span><br><span class="line">			  time = 130</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="hljs-keyword">if</span>(f == 0)&#123;</span><br><span class="line">			  $(id).html(i+<span class="hljs-string">'.00'</span>)</span><br><span class="line">			&#125;<span class="hljs-keyword">else</span>&#123;</span><br><span class="line">			  $(id).html(i+Number(f.toFixed(2)))</span><br><span class="line">			&#125;</span><br><span class="line">			myTime(time)</span><br><span class="line">		  &#125;<span class="hljs-keyword">else</span>&#123;</span><br><span class="line">			$(id).html(num)</span><br><span class="line">		  &#125;</span><br><span class="line">	  &#125;,time)</span><br><span class="line">	&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
-<p>##表单验证</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-keyword">function</span> verification(pattern,value)&#123;//表单验证</span><br><span class="line">	switch(pattern)</span><br><span class="line">		  &#123;</span><br><span class="line">			<span class="hljs-keyword">case</span> <span class="hljs-string">'required'</span>: pattern = /\S+/i;<span class="hljs-built_in">break</span>;//必填</span><br><span class="line">			<span class="hljs-keyword">case</span> <span class="hljs-string">'email'</span>: pattern = /^\w+([-+.]\w+)*@\w+([-.]\w+)+$/i;<span class="hljs-built_in">break</span>;//邮箱</span><br><span class="line">			<span class="hljs-keyword">case</span> <span class="hljs-string">'qq'</span>:  pattern = /^[1-9][0-9]&#123;4,&#125;$/i;<span class="hljs-built_in">break</span>;//qq</span><br><span class="line">			<span class="hljs-keyword">case</span> <span class="hljs-string">'id'</span>: pattern = /^\d&#123;15&#125;(\d&#123;2&#125;[0-9x])?$/i;<span class="hljs-built_in">break</span>;//身份证</span><br><span class="line">			<span class="hljs-keyword">case</span> <span class="hljs-string">'ip'</span>: pattern = /^(([0-9]|[1-9][0-9]|1[0-9]&#123;2&#125;|2[0-4][0-9]|25[0-5])\.)&#123;3&#125;([0-9]|[1-9][0-9]|1[0-9]&#123;2&#125;|2[0-4][0-9]|25[0-5])$/i;<span class="hljs-built_in">break</span>;//IP地址</span><br><span class="line">			<span class="hljs-keyword">case</span> <span class="hljs-string">'zip'</span>: pattern = /^\d&#123;6&#125;$/i;<span class="hljs-built_in">break</span>;</span><br><span class="line">			<span class="hljs-keyword">case</span> <span class="hljs-string">'mobi'</span>: pattern = /^1[3|4|5|7|8][0-9]\d&#123;8&#125;$/;<span class="hljs-built_in">break</span>;//手机号</span><br><span class="line">			<span class="hljs-keyword">case</span> <span class="hljs-string">'phone'</span>: pattern = /^((\d&#123;3,4&#125;)|\d&#123;3,4&#125;-)?\d&#123;3,8&#125;(-\d+)*$/i;<span class="hljs-built_in">break</span>;//电话</span><br><span class="line">			<span class="hljs-keyword">case</span> <span class="hljs-string">'url'</span>: pattern = /^[a-zA-z]+:\/\/(\w+(-\w+)*)(\.(\w+(-\w+)*))+(\/?\S*)?$/i;<span class="hljs-built_in">break</span>;//网址</span><br><span class="line">			<span class="hljs-keyword">case</span> <span class="hljs-string">'date'</span>: pattern = /^(?:(?!0000)[0-9]&#123;4&#125;-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-8])|(?:0[13-9]|1[0-2])-(?:29|30)|(?:0[13578]|1[02])-31)|(?:[0-9]&#123;2&#125;(?:0[48]|[2468][048]|[13579][26])|(?:0[48]|[2468][048]|[13579][26])00)-02-29)$/i;<span class="hljs-built_in">break</span>;//日期</span><br><span class="line">			<span class="hljs-keyword">case</span> <span class="hljs-string">'datetime'</span>: pattern = /^(?:(?!0000)[0-9]&#123;4&#125;-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-8])|(?:0[13-9]|1[0-2])-(?:29|30)|(?:0[13578]|1[02])-31)|(?:[0-9]&#123;2&#125;(?:0[48]|[2468][048]|[13579][26])|(?:0[48]|[2468][048]|[13579][26])00)-02-29) (?:(?:[0-1][0-9])|(?:2[0-3])):(?:[0-5][0-9]):(?:[0-5][0-9])$/i;<span class="hljs-built_in">break</span>;//日期和时间</span><br><span class="line">			<span class="hljs-keyword">case</span> <span class="hljs-string">'int'</span>: pattern = /^\d+$/i;<span class="hljs-built_in">break</span>;//整形</span><br><span class="line">			<span class="hljs-keyword">case</span> <span class="hljs-string">'float'</span>: pattern = /^\d+\.?\d*$/i;<span class="hljs-built_in">break</span>;//浮点数</span><br><span class="line">			<span class="hljs-keyword">case</span> <span class="hljs-string">'percent'</span>: pattern = /^[1-9][0-9]*$/;<span class="hljs-built_in">break</span>;//百分数</span><br><span class="line">		  &#125;</span><br><span class="line">	pattern = new RegExp(pattern)</span><br><span class="line">	<span class="hljs-built_in">return</span> pattern.test(value) </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="回到顶部"><a href="#回到顶部" class="headerlink" title="回到顶部"></a>回到顶部</h2><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">function</span> scroll_up(Obj)&#123;//回到顶部</span><br><span class="line">	var a,b,c,<span class="hljs-variable">$jsObj</span>;</span><br><span class="line">		<span class="hljs-keyword">if</span>(Obj.length)&#123;</span><br><span class="line">			<span class="hljs-variable">$jsObj</span> = Obj[0];</span><br><span class="line">			a = Obj.scrollTop();//滚动条y轴上的距离</span><br><span class="line">			b = <span class="hljs-variable">$jsObj</span>.clientHeight || document.body.clientHeight;//可视区域的高度</span><br><span class="line">			c = <span class="hljs-variable">$jsObj</span>.scrollHeight || document.body.scrollHeight;//可视化的高度与溢出的距离（总高度）</span><br><span class="line">		&#125;<span class="hljs-keyword">else</span>&#123;</span><br><span class="line">			<span class="hljs-variable">$jsObj</span> = this;</span><br><span class="line">			a = document.documentElement.scrollTop || Obj.scrollTop;//滚动条y轴上的距离</span><br><span class="line">			b = document.documentElement.clientHeight || Obj.clientHeight;//可视区域的高度</span><br><span class="line">			c = document.documentElement.scrollHeight || Obj.scrollHeight;//可视化的高度与溢出的距离（总高度）</span><br><span class="line">		&#125;</span><br><span class="line">		var c2 = c/2;</span><br><span class="line"></span><br><span class="line">		<span class="hljs-keyword">if</span>(a+b &gt;= c2 &amp;&amp; c2 &gt;= b)&#123;</span><br><span class="line">			<span class="hljs-keyword">if</span>(document.getElementById(<span class="hljs-string">'back_top'</span>) == null)&#123;</span><br><span class="line">				var oDiv = document.createElement(<span class="hljs-string">'div'</span>);</span><br><span class="line">				oDiv.style.width = <span class="hljs-string">'40px'</span>;</span><br><span class="line">				oDiv.style.height = <span class="hljs-string">'40px'</span>;</span><br><span class="line">				oDiv.style.borderRadius = <span class="hljs-string">'40px'</span>;</span><br><span class="line">				oDiv.style.background = <span class="hljs-string">'url(&#123;skin:imgs/back_top1.png&#125;) no-repeat 0'</span>;</span><br><span class="line">				oDiv.style.backgroundSize = <span class="hljs-string">'40px'</span>;</span><br><span class="line">				oDiv.style.position = <span class="hljs-string">'fixed'</span>;</span><br><span class="line">				oDiv.style.zIndex = 9999;</span><br><span class="line">				oDiv.style.right = <span class="hljs-string">'5px'</span>;</span><br><span class="line">				oDiv.style.bottom = <span class="hljs-string">'80px'</span>;</span><br><span class="line">				document.body.appendChild(oDiv);</span><br><span class="line">				var back_top = document.createAttribute(<span class="hljs-string">'id'</span>);</span><br><span class="line">				back_top.nodeValue = <span class="hljs-string">'back_top'</span>;</span><br><span class="line">				oDiv.setAttributeNode(back_top)</span><br><span class="line">				oDiv.onclick = <span class="hljs-function"><span class="hljs-title">function</span></span>()&#123;</span><br><span class="line">					scrollAnimation(a)</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;<span class="hljs-keyword">else</span>&#123;</span><br><span class="line">				document.getElementById(<span class="hljs-string">'back_top'</span>).style.display = <span class="hljs-string">'block'</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(a+b &lt;= c2 &amp;&amp; document.getElementById(<span class="hljs-string">'back_top'</span>) != null)&#123;</span><br><span class="line">			document.getElementById(<span class="hljs-string">'back_top'</span>).style.display = <span class="hljs-string">'none'</span>;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="hljs-keyword">function</span> scrollAnimation(a)&#123;</span><br><span class="line">			myTimeout()</span><br><span class="line">			// debugger</span><br><span class="line">			<span class="hljs-keyword">function</span> <span class="hljs-function"><span class="hljs-title">myTimeout</span></span>()&#123;</span><br><span class="line">				a = parseInt(a - a/10);</span><br><span class="line">				<span class="hljs-keyword">if</span>(parseInt(a/2) &gt;= 4 )&#123;</span><br><span class="line">					<span class="hljs-variable">$jsObj</span>.scrollTo(0,a)</span><br><span class="line">					setTimeout(myTimeout,10)</span><br><span class="line">				&#125;<span class="hljs-keyword">else</span>&#123;</span><br><span class="line">					<span class="hljs-variable">$jsObj</span>.scrollTo(0,0)</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">			</span><br><span class="line">		&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="ajax上传文件"><a href="#ajax上传文件" class="headerlink" title="ajax上传文件"></a>ajax上传文件</h2><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">// 获取文件</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">function</span> <span class="hljs-function"><span class="hljs-title">addFile</span></span>() &#123;</span><br><span class="line">   document.getElementById(<span class="hljs-string">'test1'</span>).value = <span class="hljs-string">""</span>;</span><br><span class="line">   var file = document.querySelector(<span class="hljs-string">'input[type=file]'</span>).files[0];//IE10以下不支持</span><br><span class="line">   var typeStr=<span class="hljs-string">"image/jpg,image/png,image/gif,image/jpeg"</span>;</span><br><span class="line">   <span class="hljs-keyword">if</span>(typeStr.indexOf(file.type)&gt;=0)&#123;</span><br><span class="line">	  document.getElementById(<span class="hljs-string">'test1'</span>).value = file.name;</span><br><span class="line">	  <span class="hljs-keyword">if</span> (file.size &gt; 2097152) &#123;</span><br><span class="line">			alert(<span class="hljs-string">"上传的文件不能大于2M"</span>);</span><br><span class="line">		 <span class="hljs-built_in">return</span>;</span><br><span class="line">	  &#125;<span class="hljs-keyword">else</span>&#123;</span><br><span class="line"></span><br><span class="line"> 　　　　upload(path,file)</span><br><span class="line">　　　　&#125;</span><br><span class="line">   &#125;<span class="hljs-keyword">else</span>&#123;</span><br><span class="line">	  alert(<span class="hljs-string">"请上传格式为jpg、png、gif、jpeg的图片"</span>);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//上传文件</span><br><span class="line"><span class="hljs-keyword">function</span> upload(path,theFormFile) &#123;</span><br><span class="line"></span><br><span class="line">	var fd = new FormData();//使用FormData必须使用form标签</span><br><span class="line"></span><br><span class="line">	fd.append(<span class="hljs-string">'file1'</span>, theFormFile);//上传的文件： 键名，键值</span><br><span class="line">	var url = path;//接口</span><br><span class="line">	url = url ? url : <span class="hljs-string">''</span>;</span><br><span class="line">	var XHR = null;</span><br><span class="line">	<span class="hljs-keyword">if</span> (window.XMLHttpRequest) &#123;</span><br><span class="line">		// 非IE内核</span><br><span class="line">		XHR = new XMLHttpRequest();</span><br><span class="line">	&#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (window.ActiveXObject) &#123;</span><br><span class="line">		// IE内核，这里早期IE版本不同，具体可以查下</span><br><span class="line">		XHR = new ActiveXObject(<span class="hljs-string">"Microsoft.XMLHTTP"</span>);</span><br><span class="line">	&#125; <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">		XHR = null;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="hljs-keyword">if</span> (XHR) &#123;</span><br><span class="line">		XHR.open(<span class="hljs-string">"POST"</span>, url);</span><br><span class="line">		XHR.onreadystatechange = <span class="hljs-function"><span class="hljs-title">function</span></span>() &#123;</span><br><span class="line">			<span class="hljs-keyword">if</span> (XHR.readyState == 4 &amp;&amp; XHR.status == 200) &#123;</span><br><span class="line">				var resultValue = XHR.responseText;</span><br><span class="line">				var data = JSON.parse(resultValue);</span><br><span class="line">				XHR = null;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		XHR.send(fd);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>##上传图片时为图片添加预览图</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line">jQuery.fn.extend(&#123;//上传图片时为图片添加预览图</span><br><span class="line">	    uploadPreview: <span class="hljs-keyword">function</span> (opts) &#123;</span><br><span class="line">	        var _self = this,//原生file对象</span><br><span class="line">	            _this = $(this);//jq file对象</span><br><span class="line">	        opts = jQuery.extend(&#123;//img对象</span><br><span class="line">	            Img: <span class="hljs-string">"zz_i"</span>,</span><br><span class="line">	            Width: 100,</span><br><span class="line">	            Height: 100,</span><br><span class="line">	            ImgType: [<span class="hljs-string">"gif"</span>, <span class="hljs-string">"jpeg"</span>, <span class="hljs-string">"jpg"</span>, <span class="hljs-string">"bmp"</span>, <span class="hljs-string">"png"</span>],</span><br><span class="line">	            Callback: <span class="hljs-function"><span class="hljs-title">function</span></span> () &#123;&#125;</span><br><span class="line">	        &#125;, opts || &#123;&#125;);</span><br><span class="line">	        _self.getObjectURL = <span class="hljs-keyword">function</span> (file) &#123;</span><br><span class="line">	            var url = null;</span><br><span class="line">	            <span class="hljs-keyword">if</span> (window.createObjectURL != undefined) &#123;</span><br><span class="line">	                url = window.createObjectURL(file)</span><br><span class="line">	            &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (window.URL != undefined) &#123;</span><br><span class="line">	                url = window.URL.createObjectURL(file)</span><br><span class="line">	            &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (window.webkitURL != undefined) &#123;</span><br><span class="line">	                url = window.webkitURL.createObjectURL(file)</span><br><span class="line">	            &#125;</span><br><span class="line">	            <span class="hljs-built_in">return</span> url</span><br><span class="line">	        &#125;;</span><br><span class="line">	        </span><br><span class="line">	        _this.change(<span class="hljs-function"><span class="hljs-title">function</span></span> () &#123;</span><br><span class="line">	            <span class="hljs-keyword">if</span> (this.value) &#123;</span><br><span class="line">	                <span class="hljs-keyword">if</span> (!RegExp(<span class="hljs-string">"\.("</span> + opts.ImgType.join(<span class="hljs-string">"|"</span>) + <span class="hljs-string">")$"</span>, <span class="hljs-string">"i"</span>).<span class="hljs-built_in">test</span>(this.value.toLowerCase())) &#123;</span><br><span class="line">	                    alert(<span class="hljs-string">"选择文件错误,图片类型必须是"</span> + opts.ImgType.join(<span class="hljs-string">"，"</span>) + <span class="hljs-string">"中的一种"</span>);</span><br><span class="line">	                    this.value = <span class="hljs-string">""</span>;</span><br><span class="line">	                    <span class="hljs-built_in">return</span> <span class="hljs-literal">false</span></span><br><span class="line">	                &#125;</span><br><span class="line">	                <span class="hljs-keyword">if</span> ($.support.msie) &#123;</span><br><span class="line">	                	debugger</span><br><span class="line">	                    try &#123;</span><br><span class="line">	                        $(<span class="hljs-string">"#"</span> + opts.Img).attr(<span class="hljs-string">'src'</span>, _self.getObjectURL(this.files[0]))</span><br><span class="line">	                    &#125; catch (e) &#123;</span><br><span class="line">	                        var src = <span class="hljs-string">""</span>;</span><br><span class="line">	                        var obj = $(<span class="hljs-string">"#"</span> + opts.Img);</span><br><span class="line">	                        var div = obj.parent(<span class="hljs-string">"div"</span>)[0];</span><br><span class="line">	                        _self.select();</span><br><span class="line">	                        <span class="hljs-keyword">if</span> (top != self) &#123;</span><br><span class="line">	                            window.parent.document.body.focus()</span><br><span class="line">	                        &#125; <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">	                            _self.blur()</span><br><span class="line">	                        &#125;</span><br><span class="line">	                        src = document.selection.createRange().text;</span><br><span class="line">	                        document.selection.empty();</span><br><span class="line">	                        obj.hide();</span><br><span class="line">	                        obj.parent(<span class="hljs-string">"div"</span>).css(&#123;</span><br><span class="line">	                            <span class="hljs-string">'filter'</span>: <span class="hljs-string">'progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)'</span>,</span><br><span class="line">	                            <span class="hljs-string">'width'</span>: opts.Width + <span class="hljs-string">'px'</span>,</span><br><span class="line">	                            <span class="hljs-string">'height'</span>: opts.Height + <span class="hljs-string">'px'</span></span><br><span class="line">	                        &#125;);</span><br><span class="line">	                        div.filters.item(<span class="hljs-string">"DXImageTransform.Microsoft.AlphaImageLoader"</span>).src = src</span><br><span class="line">	                    &#125;</span><br><span class="line">	                &#125; <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">	                    $(<span class="hljs-string">"#"</span> + opts.Img).attr(<span class="hljs-string">'src'</span>, _self.getObjectURL(this.files[0]))</span><br><span class="line">	                &#125;</span><br><span class="line">	                opts.Callback()</span><br><span class="line">	            &#125;</span><br><span class="line">	        &#125;)</span><br><span class="line">	    &#125;</span><br><span class="line">	&#125;);</span><br><span class="line"></span><br><span class="line">   	$(file的id).uploadPreview(&#123; Img: 图片的id , Width: 120, Height: 120 &#125;);</span><br></pre></td></tr></table></figure>
+            <h1 id="JavaScript一些知识点实例"><a href="#JavaScript一些知识点实例" class="headerlink" title="JavaScript一些知识点实例"></a>JavaScript一些知识点实例</h1>
         </div>
         
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2016/12/01/js%E5%AE%9E%E4%BE%8B/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
         
         
     </div>
@@ -386,7 +404,7 @@
                     </p>
                     <a href="/categories">
                         <p class="title has-text-weight-normal">
-                            0
+                            3
                         </p>
                     </a>
                 </div>
@@ -511,7 +529,31 @@
                 分类
             </h3>
             <ul class="menu-list">
-            
+            <li>
+        <a class="level is-marginless" href="/categories/Hexo/">
+            <span class="level-start">
+                <span class="level-item">Hexo</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/JavaScript/">
+            <span class="level-start">
+                <span class="level-item">JavaScript</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">2</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/git/">
+            <span class="level-start">
+                <span class="level-item">git</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li>
             </ul>
         </div>
     </div>
@@ -522,7 +564,7 @@
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/js-%E5%8E%9F%E5%9E%8B%E9%93%BE-%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/" style="font-size: 10px;">js,原型链,对象类型</a>
+        <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/js/" style="font-size: 10px;">js</a>
     </div>
 </div>
     
@@ -548,7 +590,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-12T03:05:16.000Z">2019-12-12</time></div>
                     <a href="/2019/12/12/js%E6%A3%80%E6%9F%A5%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/" class="title has-link-black-ter is-size-6 has-text-weight-normal">js检查对象类型</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/JavaScript/">JavaScript</a>
                     </p>
                 </div>
             </div>
@@ -567,7 +609,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-11T02:15:34.394Z">2019-12-11</time></div>
                     <a href="/2019/12/11/hexo%E7%94%A8%E6%B3%95/" class="title has-link-black-ter is-size-6 has-text-weight-normal">hexo用法</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Hexo/">Hexo</a>
                     </p>
                 </div>
             </div>
@@ -586,7 +628,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-06-12T02:56:59.000Z">2018-06-12</time></div>
                     <a href="/2018/06/12/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="title has-link-black-ter is-size-6 has-text-weight-normal">git常用命令</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/git/">git</a>
                     </p>
                 </div>
             </div>
@@ -605,7 +647,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2016-12-01T03:21:51.000Z">2016-12-01</time></div>
                     <a href="/2016/12/01/js%E5%AE%9E%E4%BE%8B/" class="title has-link-black-ter is-size-6 has-text-weight-normal">JavaScript一些知识点实例</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/JavaScript/">JavaScript</a>
                     </p>
                 </div>
             </div>
@@ -683,8 +725,8 @@
                 </div>
                 
                 <div class="control">
-                    <a class="tags has-addons" href="/tags/js-%E5%8E%9F%E5%9E%8B%E9%93%BE-%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/">
-                        <span class="tag">js,原型链,对象类型</span>
+                    <a class="tags has-addons" href="/tags/js/">
+                        <span class="tag">js</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -724,7 +766,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-12T03:05:16.000Z">2019-12-12</time></div>
                     <a href="/2019/12/12/js%E6%A3%80%E6%9F%A5%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/" class="title has-link-black-ter is-size-6 has-text-weight-normal">js检查对象类型</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/JavaScript/">JavaScript</a>
                     </p>
                 </div>
             </div>
@@ -743,7 +785,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-11T02:15:34.394Z">2019-12-11</time></div>
                     <a href="/2019/12/11/hexo%E7%94%A8%E6%B3%95/" class="title has-link-black-ter is-size-6 has-text-weight-normal">hexo用法</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Hexo/">Hexo</a>
                     </p>
                 </div>
             </div>
@@ -762,7 +804,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-06-12T02:56:59.000Z">2018-06-12</time></div>
                     <a href="/2018/06/12/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="title has-link-black-ter is-size-6 has-text-weight-normal">git常用命令</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/git/">git</a>
                     </p>
                 </div>
             </div>
@@ -781,7 +823,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2016-12-01T03:21:51.000Z">2016-12-01</time></div>
                     <a href="/2016/12/01/js%E5%AE%9E%E4%BE%8B/" class="title has-link-black-ter is-size-6 has-text-weight-normal">JavaScript一些知识点实例</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/JavaScript/">JavaScript</a>
                     </p>
                 </div>
             </div>
@@ -859,8 +901,8 @@
                 </div>
                 
                 <div class="control">
-                    <a class="tags has-addons" href="/tags/js-%E5%8E%9F%E5%9E%8B%E9%93%BE-%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/">
-                        <span class="tag">js,原型链,对象类型</span>
+                    <a class="tags has-addons" href="/tags/js/">
+                        <span class="tag">js</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -935,7 +977,7 @@ var IcarusThemeSettings = {
     article: {
         highlight: {
             clipboard: true,
-            fold: 'folded'
+            fold: 'unfolded'
         }
     }
 };

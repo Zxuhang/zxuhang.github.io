@@ -7,13 +7,13 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>标签: js,原型链,对象类型 - 赵旭航</title>
+<title>分类: JavaScript - 赵旭航</title>
 
 
     <meta name="description" content="赵旭航的前端博客">
 <meta property="og:type" content="website">
 <meta property="og:title" content="赵旭航">
-<meta property="og:url" content="https:&#x2F;&#x2F;zxuhang.github.io&#x2F;tags&#x2F;js-%E5%8E%9F%E5%9E%8B%E9%93%BE-%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B&#x2F;index.html">
+<meta property="og:url" content="https:&#x2F;&#x2F;zxuhang.github.io&#x2F;categories&#x2F;JavaScript&#x2F;index.html">
 <meta property="og:site_name" content="赵旭航">
 <meta property="og:description" content="赵旭航的前端博客">
 <meta property="og:locale" content="zh_CN">
@@ -138,8 +138,9 @@
     <div class="card-content">
         <nav class="breadcrumb" aria-label="breadcrumbs">
         <ul>
-            <li><a href="/tags">标签</a></li>
-            <li class="is-active"><a href="#" aria-current="page">js,原型链,对象类型</a></li>
+            <li><a href="/categories">分类</a></li>
+            
+            <li class="is-active"><a href="#" aria-current="page">JavaScript</a></li>
         </ul>
         </nav>
     </div>
@@ -154,11 +155,15 @@
             <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2019-12-12T03:05:16.000Z">2019-12-12</time>
                 
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/JavaScript/">JavaScript</a>
+                </div>
+                
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    1 分钟 读完 (大约 188 个字)
+                    1 分钟 读完 (大约 195 个字)
                 </span>
                 
                 
@@ -171,10 +176,70 @@
             
         </h1>
         <div class="content">
-            <a id="more"></a>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">hasOwnProperty 此方法无法检查该对象的原型链中是否具有该属性</span><br><span class="line">	object.hasOwnProperty(proName)</span><br><span class="line"></span><br><span class="line">constructor 属性返回对创建此对象的数组函数的引用 属性值是指向创建当前实例的对象的	</span><br><span class="line">	[].constructor == Array //<span class="hljs-literal">true</span></span><br><span class="line">	Object.constructor == Object //<span class="hljs-literal">false</span></span><br><span class="line">	原型链被改变会报错</span><br><span class="line">		var arr = [];</span><br><span class="line">		arr.__proto__ = String</span><br><span class="line">		arr.constructor == Array //<span class="hljs-literal">false</span></span><br><span class="line"></span><br><span class="line">instanceof 检测这个实例对象是不是这个方法new出来的</span><br><span class="line">	[] instanceof Array //<span class="hljs-literal">true</span></span><br><span class="line">	Number instanceof Number //<span class="hljs-literal">false</span></span><br><span class="line">	String instanceof String //<span class="hljs-literal">false</span></span><br><span class="line">	Object instanceof Object //<span class="hljs-literal">true</span></span><br><span class="line">	Function instanceof Function //<span class="hljs-literal">true</span></span><br><span class="line">	Function instanceof Object //<span class="hljs-literal">true</span></span><br><span class="line">	<span class="hljs-keyword">function</span> <span class="hljs-function"><span class="hljs-title">Foo</span></span>()&#123;&#125;</span><br><span class="line">	Foo instanceof Function //<span class="hljs-literal">true</span></span><br><span class="line">	Foo instanceof Foo //<span class="hljs-literal">false</span></span><br><span class="line">	原型链改变会报错</span><br><span class="line">		var arr = []</span><br><span class="line">		arr.__proto__ = String</span><br><span class="line">		arr instanceof Array //<span class="hljs-literal">false</span></span><br><span class="line"></span><br><span class="line">typeof 用于检测基本类型</span><br><span class="line">	typeof undefined;//=&gt; undefined</span><br><span class="line">	typeof <span class="hljs-string">'a'</span>;//=&gt; string</span><br><span class="line">	typeof 1;//=&gt; number</span><br><span class="line">	typeof <span class="hljs-literal">true</span>;//=&gt; boolean</span><br><span class="line">	typeof &#123;&#125;;//=&gt; object</span><br><span class="line">	typeof [];//=&gt; object</span><br><span class="line">	typeof <span class="hljs-function"><span class="hljs-title">function</span></span>() &#123;&#125;;//=&gt; <span class="hljs-keyword">function</span></span><br><span class="line">	typeof null;//=&gt; object</span><br></pre></td></tr></table></figure>
+            <h1 id="js检查对象类型"><a href="#js检查对象类型" class="headerlink" title="js检查对象类型"></a>js检查对象类型</h1>
         </div>
         
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2019/12/12/js%E6%A3%80%E6%9F%A5%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2016-12-01T03:21:51.000Z">2016-12-01</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/JavaScript/">JavaScript</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    10 分钟 读完 (大约 1427 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2016/12/01/js%E5%AE%9E%E4%BE%8B/">JavaScript一些知识点实例</a>
+            
+        </h1>
+        <div class="content">
+            <h1 id="JavaScript一些知识点实例"><a href="#JavaScript一些知识点实例" class="headerlink" title="JavaScript一些知识点实例"></a>JavaScript一些知识点实例</h1>
+        </div>
+        
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2016/12/01/js%E5%AE%9E%E4%BE%8B/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
         
         
     </div>
@@ -244,7 +309,7 @@
                     </p>
                     <a href="/categories">
                         <p class="title has-text-weight-normal">
-                            0
+                            3
                         </p>
                     </a>
                 </div>
@@ -369,7 +434,31 @@
                 分类
             </h3>
             <ul class="menu-list">
-            
+            <li>
+        <a class="level is-marginless" href="/categories/Hexo/">
+            <span class="level-start">
+                <span class="level-item">Hexo</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/JavaScript/">
+            <span class="level-start">
+                <span class="level-item">JavaScript</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">2</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/git/">
+            <span class="level-start">
+                <span class="level-item">git</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li>
             </ul>
         </div>
     </div>
@@ -380,7 +469,7 @@
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/js-%E5%8E%9F%E5%9E%8B%E9%93%BE-%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/" style="font-size: 10px;">js,原型链,对象类型</a>
+        <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/js/" style="font-size: 10px;">js</a>
     </div>
 </div>
     
@@ -406,7 +495,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-12T03:05:16.000Z">2019-12-12</time></div>
                     <a href="/2019/12/12/js%E6%A3%80%E6%9F%A5%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/" class="title has-link-black-ter is-size-6 has-text-weight-normal">js检查对象类型</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/JavaScript/">JavaScript</a>
                     </p>
                 </div>
             </div>
@@ -425,7 +514,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-11T02:15:34.394Z">2019-12-11</time></div>
                     <a href="/2019/12/11/hexo%E7%94%A8%E6%B3%95/" class="title has-link-black-ter is-size-6 has-text-weight-normal">hexo用法</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Hexo/">Hexo</a>
                     </p>
                 </div>
             </div>
@@ -444,7 +533,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-06-12T02:56:59.000Z">2018-06-12</time></div>
                     <a href="/2018/06/12/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="title has-link-black-ter is-size-6 has-text-weight-normal">git常用命令</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/git/">git</a>
                     </p>
                 </div>
             </div>
@@ -463,7 +552,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2016-12-01T03:21:51.000Z">2016-12-01</time></div>
                     <a href="/2016/12/01/js%E5%AE%9E%E4%BE%8B/" class="title has-link-black-ter is-size-6 has-text-weight-normal">JavaScript一些知识点实例</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/JavaScript/">JavaScript</a>
                     </p>
                 </div>
             </div>
@@ -541,8 +630,8 @@
                 </div>
                 
                 <div class="control">
-                    <a class="tags has-addons" href="/tags/js-%E5%8E%9F%E5%9E%8B%E9%93%BE-%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/">
-                        <span class="tag">js,原型链,对象类型</span>
+                    <a class="tags has-addons" href="/tags/js/">
+                        <span class="tag">js</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -582,7 +671,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-12T03:05:16.000Z">2019-12-12</time></div>
                     <a href="/2019/12/12/js%E6%A3%80%E6%9F%A5%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/" class="title has-link-black-ter is-size-6 has-text-weight-normal">js检查对象类型</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/JavaScript/">JavaScript</a>
                     </p>
                 </div>
             </div>
@@ -601,7 +690,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-11T02:15:34.394Z">2019-12-11</time></div>
                     <a href="/2019/12/11/hexo%E7%94%A8%E6%B3%95/" class="title has-link-black-ter is-size-6 has-text-weight-normal">hexo用法</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Hexo/">Hexo</a>
                     </p>
                 </div>
             </div>
@@ -620,7 +709,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-06-12T02:56:59.000Z">2018-06-12</time></div>
                     <a href="/2018/06/12/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="title has-link-black-ter is-size-6 has-text-weight-normal">git常用命令</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/git/">git</a>
                     </p>
                 </div>
             </div>
@@ -639,7 +728,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2016-12-01T03:21:51.000Z">2016-12-01</time></div>
                     <a href="/2016/12/01/js%E5%AE%9E%E4%BE%8B/" class="title has-link-black-ter is-size-6 has-text-weight-normal">JavaScript一些知识点实例</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/JavaScript/">JavaScript</a>
                     </p>
                 </div>
             </div>
@@ -717,8 +806,8 @@
                 </div>
                 
                 <div class="control">
-                    <a class="tags has-addons" href="/tags/js-%E5%8E%9F%E5%9E%8B%E9%93%BE-%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/">
-                        <span class="tag">js,原型链,对象类型</span>
+                    <a class="tags has-addons" href="/tags/js/">
+                        <span class="tag">js</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -793,7 +882,7 @@ var IcarusThemeSettings = {
     article: {
         highlight: {
             clipboard: true,
-            fold: 'folded'
+            fold: 'unfolded'
         }
     }
 };
