@@ -7,27 +7,23 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>hexo用法 - 赵旭航</title>
+<title>ES6的Promise和import - 赵旭航</title>
 
 
-    <meta name="description" content="欢迎来到河西！这是你的第一份工作。查看文档以获取更多信息。如果您在使用Hexo时遇到任何问题，可以在故障排除中找到答案，也可以在GitHub上询问我。">
+    <meta name="description" content="#ES6的Promise 和 import    获取异步数据，摆脱无限回调地狱    是异步编程的一种解决方案">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo用法">
-<meta property="og:url" content="https:&#x2F;&#x2F;zxuhang.github.io&#x2F;2016&#x2F;02&#x2F;12&#x2F;hexo%E7%94%A8%E6%B3%95&#x2F;index.html">
+<meta property="og:title" content="ES6的Promise和import">
+<meta property="og:url" content="https:&#x2F;&#x2F;zxuhang.github.io&#x2F;2019&#x2F;12&#x2F;17&#x2F;Promise&#x2F;index.html">
 <meta property="og:site_name" content="赵旭航">
-<meta property="og:description" content="欢迎来到河西！这是你的第一份工作。查看文档以获取更多信息。如果您在使用Hexo时遇到任何问题，可以在故障排除中找到答案，也可以在GitHub上询问我。">
+<meta property="og:description" content="#ES6的Promise 和 import    获取异步数据，摆脱无限回调地狱    是异步编程的一种解决方案">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https:&#x2F;&#x2F;zxuhang.github.io&#x2F;images&#x2F;og_image.png">
-<meta property="article:published_time" content="2016-02-12T03:05:16.000Z">
-<meta property="article:modified_time" content="2019-12-12T08:05:26.884Z">
+<meta property="article:published_time" content="2019-12-17T03:38:56.000Z">
+<meta property="article:modified_time" content="2019-12-17T06:11:51.540Z">
 <meta property="article:author" content="赵旭航">
-<meta property="article:tag" content="赵旭航">
-<meta property="article:tag" content="前端">
-<meta property="article:tag" content="博客">
-<meta property="article:tag" content="笔记">
-<meta property="article:tag" content="zxh">
-<meta property="article:tag" content="blog">
-<meta property="article:tag" content="zxhblog">
+<meta property="article:tag" content="异步">
+<meta property="article:tag" content="ES6">
+<meta property="article:tag" content="Promise">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;zxuhang.github.io&#x2F;images&#x2F;og_image.png">
 
@@ -87,7 +83,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="hexo用法" height="28">
+                <img src="/images/logo.svg" alt="ES6的Promise和import" height="28">
             
             </a>
         </div>
@@ -143,17 +139,17 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2016-02-12T03:05:16.000Z">2016-02-12</time>
+                <time class="level-item has-text-grey" datetime="2019-12-17T03:38:56.000Z">2019-12-17</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Hexo/">Hexo</a>
+                <a class="has-link-grey -link" href="/categories/ES6/">ES6</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    2 分钟 读完 (大约 239 个字)
+                    4 分钟 读完 (大约 628 个字)
                 </span>
                 
                 
@@ -162,26 +158,39 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                hexo用法
+                ES6的Promise和import
             
         </h1>
         <div class="content">
-            <p>欢迎来到河西！这是你的第一份工作。查看文档以获取更多信息。如果您在使用Hexo时遇到任何问题，可以在故障排除中找到答案，也可以在GitHub上询问我。</p>
-<a id="more"></a>
-<p>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.<br>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="快速启动"><a href="#快速启动" class="headerlink" title="快速启动"></a>快速启动</h2><h3 id="创建新帖子"><a href="#创建新帖子" class="headerlink" title="创建新帖子"></a>创建新帖子</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="hljs-string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+            <p>#ES6的Promise 和 import<br>    获取异步数据，摆脱无限回调地狱<br>    是异步编程的一种解决方案<br>    <a id="more"></a><br>    从语法上说，Promise 是一个对象，从它可以获取异步操作的消息。<br>    Promise 异步操作有三种状态：pending（进行中）、fulfilled（已成功）和 rejected（已失败）。除了异步操作的结果，任何其他操作都无法改变这个状态。</p>
+<pre><code>Promise 对象只有：从 pending 变为 fulfilled 和从 pending 变为 rejected 的状态改变。只要处于 fulfilled 和 rejected ，状态就不会再变了即 resolved（已定型）。
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+###回调函数处理异步
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">function</span> <span class="hljs-function"><span class="hljs-title">callback</span></span>() &#123;</span><br><span class="line">	var timeOut = Math.random * 2;//生成一个0-2之间的随机数，如果小于1，打印成功，否失败</span><br><span class="line">	<span class="hljs-keyword">if</span>(timeOut&lt;1)&#123;</span><br><span class="line">		console.log(<span class="hljs-string">'成功'</span>);</span><br><span class="line">	&#125;<span class="hljs-keyword">else</span>&#123;</span><br><span class="line">		console.log(<span class="hljs-string">'失败'</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br><span class="line">console.log(<span class="hljs-string">'before setTimeout()'</span>);</span><br><span class="line">setTimeout(callback, 1000); // 1秒钟后调用callback函数</span><br><span class="line">console.log(<span class="hljs-string">'after setTimeout()'</span>)</span><br></pre></td></tr></table></figure>
+###promise处理异步
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">var printNum = new Promise(<span class="hljs-keyword">function</span>(resolve,reject)&#123;//成功resolve 失败reject</span><br><span class="line">	setTimeout(<span class="hljs-function"><span class="hljs-title">function</span></span>()&#123;</span><br><span class="line">		var timeOut = Math.random * 2;//生成一个0-2之间的随机数，如果小于1，打印成功，否失败</span><br><span class="line">		<span class="hljs-keyword">if</span>(timeOut&lt;1)&#123;</span><br><span class="line">			resolve(<span class="hljs-string">'成功'</span>);</span><br><span class="line">		&#125;<span class="hljs-keyword">else</span>&#123;</span><br><span class="line">			reject(<span class="hljs-string">'失败'</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;,100)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">printNum.then(<span class="hljs-keyword">function</span>(result)&#123;//成功调用 result结果</span><br><span class="line">	console.log(result)</span><br><span class="line">&#125;)</span><br><span class="line">.catch(<span class="hljs-keyword">function</span>(result)&#123;//失败调用 result结果</span><br><span class="line">	console.log(result)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+###promise对象串联
+Promise还可以做更多的事情，比如，有若干个异步任务，需要先做任务1，如果成功后再做任务2，任何任务失败则不再继续并执行错误处理函数。
+job1.then(job2).then(job3).catch(handleError);//job1、job2和job3都是Promise对象。
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+###Promise.all 
+方法返回一个 Promise 实例，此实例在参数内所有的 promise 都“完成（resolved）”或参数中不包含 promise 时回调完成（resolve）；
+如果参数中  promise 有一个失败（rejected），此实例回调失败（reject），失败原因的是第一个失败 promise 的结果。
+Promise.all([promise1,promise2...]).then((values)=&gt;{}) </code></pre><p>#关于import 引入模块</p>
+<pre><code>如果引用相对路径，则直接寻找这个相对路径文件 export 出来的内容。
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+如果是绝对路径，则会依次寻找 node_modules 对应的地方。
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+如果路径最终是一个文件夹，则会首先观察文件夹下是否有 package.json ,如果有 package.json 则会去加载 main 字段指向的文件，如果没有 package.json ，则会在这个文件夹下寻找 index 文件并加载。</code></pre>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/ES6/" rel="tag">ES6</a>, <a class="has-link-grey -link" href="/tags/Promise/" rel="tag">Promise</a>, <a class="has-link-grey -link" href="/tags/%E5%BC%82%E6%AD%A5/" rel="tag">异步</a>
+                </div>
+            </div>
         </div>
         
         
@@ -231,12 +240,19 @@
     <div class="level post-navigation is-flex-wrap is-mobile">
         
         <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2016/12/01/js%E5%AE%9E%E4%BE%8B/">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/12/17/Vue/">
                 <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">JavaScript一些知识点实例</span>
+                <span class="level-item">Vue安装总结</span>
             </a>
         </div>
         
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/12/17/Taro/">
+                <span class="level-item">Taro</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
         
     </div>
 </div>
@@ -1009,7 +1025,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="hexo用法" height="28">
+                    <img src="/images/logo.svg" alt="ES6的Promise和import" height="28">
                 
                 </a>
                 <p class="is-size-7">
