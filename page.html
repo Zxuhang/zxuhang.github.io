@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>--</title>
+    <style>
+        iframe{
+            width:100vw;
+            height:100vh;
+            border:0;
+        }
+    </style>
+</head>
+<body>
+    <!-- <iframe id="myIframe" src="http://62.234.76.66/#/" ></iframe> -->
+    <iframe id="myIframe" src="/" ></iframe>
+</body>
+<script>
+    const url = new URL(window.location.href);
+const paramValue = url.searchParams.get('path');
+window.onload = function(){
+    document.querySelector('#myIframe').src=paramValue
+}
+
+</script>
+</html>
